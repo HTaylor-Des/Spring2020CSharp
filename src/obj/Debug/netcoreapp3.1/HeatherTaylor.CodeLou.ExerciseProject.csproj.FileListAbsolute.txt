@@ -1,0 +1,11 @@
+C:\Users\chato\Documents\2020SpringCSharp\src\bin\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.exe
+C:\Users\chato\Documents\2020SpringCSharp\src\bin\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.deps.json
+C:\Users\chato\Documents\2020SpringCSharp\src\bin\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.runtimeconfig.json
+C:\Users\chato\Documents\2020SpringCSharp\src\bin\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.runtimeconfig.dev.json
+C:\Users\chato\Documents\2020SpringCSharp\src\bin\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.dll
+C:\Users\chato\Documents\2020SpringCSharp\src\bin\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.pdb
+C:\Users\chato\Documents\2020SpringCSharp\src\obj\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.csprojAssemblyReference.cache
+C:\Users\chato\Documents\2020SpringCSharp\src\obj\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.AssemblyInfoInputs.cache
+C:\Users\chato\Documents\2020SpringCSharp\src\obj\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.AssemblyInfo.cs
+C:\Users\chato\Documents\2020SpringCSharp\src\obj\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.dll
+C:\Users\chato\Documents\2020SpringCSharp\src\obj\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.pdb
