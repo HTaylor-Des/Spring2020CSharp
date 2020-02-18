@@ -13,17 +13,14 @@ namespace src
             Console.WriteLine("Select from the following operations:");
             Console.WriteLine("1: Enter new student");
             Console.WriteLine("2: List all students");
-            Console.WriteLine("3: Search for student by name");
+            Console.WriteLine("3: Search for student by first and last name");
             Console.WriteLine("4: Exit");
             
         }
         
                 
 
-        class DisplayStudent
-        {
-            string studentInfo = "Student ID " + "Name " + "Class ";
-        }
+        
         static List<Student> studentList = new List<Student>();
         static void Main(string[] args)
         {
@@ -98,13 +95,18 @@ namespace src
                 Console.WriteLine("Student not found.");
             }
             Console.ReadKey();
-            DisplayMap();
+            //DisplayMap();
 
         }
         static void InputStudent()
         {
             Console.WriteLine("Enter Student Id");
-            var studentId = Convert.ToInt32(Console.ReadLine());
+            var studentIdSuccessful = int.TryParse(Console.ReadLine(), out int studentId);
+            while (studentIdSuccessful == false)
+            {
+                Console.WriteLine("You done messed up! Please reenter a numeric ID");
+                studentIdSuccessful = int.TryParse(Console.ReadLine(), out studentId);
+            }
             Console.WriteLine("Enter First Name");
             var studentFirstName = Console.ReadLine();
             Console.WriteLine("Enter Last Name");
@@ -114,9 +116,19 @@ namespace src
             Console.WriteLine("Enter Last Class Completed");
             var lastClass = Console.ReadLine();
             Console.WriteLine("Enter Last Class Completed Date in format MM/dd/YYYY");
-            var lastCompletedOn = DateTimeOffset.Parse(Console.ReadLine());
+            var LastCompletedOnSuccessful = DateTimeOffset.TryParse(Console.ReadLine(), out DateTimeOffset lastCompletedOn);
+            while (LastCompletedOnSuccessful == false)
+            {
+                Console.WriteLine("You done messed up! Please enter the date in the format of MM/DD/YYYY");
+                LastCompletedOnSuccessful = DateTimeOffset.TryParse(Console.ReadLine(), out lastCompletedOn);
+            }
             Console.WriteLine("Enter Start Date in format MM/dd/YYYY");
-            var startDate = DateTimeOffset.Parse(Console.ReadLine());
+            var StartDateSuccessful = DateTimeOffset.TryParse(Console.ReadLine(), out DateTimeOffset startDate);
+            while (StartDateSuccessful == false)
+            {
+                Console.WriteLine("You done messed up! Please enter the date in the format of MM/DD/YYYY");
+                StartDateSuccessful = DateTimeOffset.TryParse(Console.ReadLine(), out startDate);
+            }
 
             var studentRecord = new src.Student();
             studentRecord.StudentId = studentId;
