@@ -95,7 +95,6 @@ namespace src
                 Console.WriteLine("Student not found.");
             }
             Console.ReadKey();
-            //DisplayMap();
 
         }
         static void InputStudent()
