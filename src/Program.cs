@@ -40,9 +40,6 @@ namespace src
         }
         
                 
-
-        
-        static List<Student> studentList = new List<Student>();
         static void Main(string[] args)
         {
             bool stillRunning = true;
@@ -84,7 +81,7 @@ namespace src
         static void ListStudents()
         {
             Console.WriteLine($"Student Id | Name |  Class ");
-            foreach(Student i in studentList)
+            foreach(Student i in studentLists)
             {
                 Console.WriteLine($"{i.StudentId} | {i.FirstName} {i.LastName} | {i.ClassName} ");
             }
@@ -97,7 +94,7 @@ namespace src
             Console.WriteLine("Who are you looking for?");
             string LookStudent = Console.ReadLine();
             bool StudentFound = true;
-            foreach (Student i in studentList)
+            foreach (Student i in studentLists)
             {
                 var FindName = $"{i.FirstName} {i.LastName}";
                 if(LookStudent == FindName)
@@ -116,7 +113,7 @@ namespace src
             {
                 Console.WriteLine("Student not found.");
             }
-            Console.ReadKey();
+            ConsoleKeyInfo consoleKeyInfo = Console.ReadKey();
 
         }
         static void InputStudent()
@@ -162,7 +159,7 @@ namespace src
             Console.WriteLine($"Student Id | Name |  Class ");
             Console.WriteLine($"{studentRecord.StudentId} | {studentRecord.FirstName} {studentRecord.LastName} | {studentRecord.ClassName} ");
             Console.ReadKey();
-            studentList.Add(studentRecord);
+            studentLists.Add(studentRecord);
             Save();
             Console.WriteLine("Another Student? Yes or no?");
             var answer = Console.ReadLine();
