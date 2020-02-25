@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using src;
 namespace HeatherTaylor.CodeLou.ExerciseProject
 {
-    class Student 
+    class Student56 
     {
         public int Id {get; set;}
         public string FirstName {get; set;}

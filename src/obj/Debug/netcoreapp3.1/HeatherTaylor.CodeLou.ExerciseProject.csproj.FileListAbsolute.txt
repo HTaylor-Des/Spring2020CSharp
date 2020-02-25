@@ -9,3 +9,5 @@ C:\Users\chato\Documents\2020SpringCSharp\src\obj\Debug\netcoreapp3.1\HeatherTay
 C:\Users\chato\Documents\2020SpringCSharp\src\obj\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.AssemblyInfo.cs
 C:\Users\chato\Documents\2020SpringCSharp\src\obj\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.dll
 C:\Users\chato\Documents\2020SpringCSharp\src\obj\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.pdb
+C:\Users\chato\Documents\2020SpringCSharp\src\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\chato\Documents\2020SpringCSharp\src\obj\Debug\netcoreapp3.1\HeatherTaylor.CodeLou.ExerciseProject.csproj.CopyComplete

@@ -2,10 +2,31 @@
 using src;
 using System.Linq;
 using System.Collections.Generic;
+using System.Text.Json;
+using System.IO;
+
 namespace src
 {
     class Program
     {
+        static string _studentRepositoryPath = $"{AppDomain.CurrentDomain.BaseDirectory}\\students.json";
+
+        static List<Student> studentLists = File.Exists(_studentRepositoryPath) ? Read() : new List<Student>();
+
+        static async void Save()
+        {
+            using (var file = File.CreateText(_studentRepositoryPath))
+            {
+                await file.WriteAsync(JsonSerializer.Serialize(studentLists));
+
+            }
+        }
+
+        static List<Student> Read() 
+        {
+            return JsonSerializer.Deserialize<List<Student>>(File.ReadAllText(_studentRepositoryPath));
+        }
+
 
         private static void DisplayMap()
         {
@@ -70,6 +91,7 @@ namespace src
             Console.ReadKey();
         }
 
+        
         private static void FindStudent()
         {
             Console.WriteLine("Who are you looking for?");
@@ -141,6 +163,7 @@ namespace src
             Console.WriteLine($"{studentRecord.StudentId} | {studentRecord.FirstName} {studentRecord.LastName} | {studentRecord.ClassName} ");
             Console.ReadKey();
             studentList.Add(studentRecord);
+            Save();
             Console.WriteLine("Another Student? Yes or no?");
             var answer = Console.ReadLine();
             if (answer.ToLower() == "yes")
