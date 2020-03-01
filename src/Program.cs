@@ -15,7 +15,6 @@ namespace src
             Console.WriteLine("2: List all students");
             Console.WriteLine("3: Search for student by name");
             Console.WriteLine("4: Exit");
-            
         }
         
                 
